@@ -171,7 +171,31 @@ body {
   .clock__rounder {
     width: 8px;
     height: 8px;
-
-
   }
+
+  .clock__minutes {
+    width: 3px;
+    height: 62px;
+  }
+
+  .clock__hour {
+    width: 3px;
+    height: 40px;
+  }
+
+  .clock__date {
+    margin-bottom: 1.5rem;
+  }
+
+  .clock__day-week {
+    font-size: var(--h2-font-size);
+  }
+
+  .clock__month, 
+  .clock__day, 
+  .clock__year, 
+  .clock__text-hour, 
+  .clock__text-minutes {
+    font-size: var(--h1-font-size);
+  } 
 }
