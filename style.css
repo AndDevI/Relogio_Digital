@@ -112,7 +112,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.clock__day-week, .clock__text-ampm {
+.clock__day-week {
   font-size: var(--small-font-size);
   font-weight: 500;
 }
