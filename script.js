@@ -4,14 +4,9 @@ const minutes = document.getElementById("clock-minutes")
 
 const clock = () => {
   let date = new Date()
-  let options = { timeZone: "America/Sao_Paulo", hour12: false }
-  let formatter = new Intl.DateTimeFormat("pt-BR", options)
 
-  let formattedTime = formatter.format(date)
-  let [hh, mm] = formattedTime.split(":").map(Number)
-
-  hh = (hh / 12) * 360
-  mm = (mm / 60) * 360
+  let hh = (date.getHours() / 12) * 360
+  let mm = (date.getMinutes() / 60) * 360
 
   hour.style.transform = `rotateZ(${hh + mm / 12}deg)`
   minutes.style.transform = `rotateZ(${mm}deg)`
