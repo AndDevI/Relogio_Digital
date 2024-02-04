@@ -79,3 +79,16 @@ body {
 
   z-index: 2;
 }
+
+.clock__hour {
+  width: 2px;
+  height: 25px;
+
+  background-color: var(--red-color);
+}
+
+.clock__minutes {
+  width: 2px;
+  height: 38px;
+  background-color: var(--red-color);
+}
